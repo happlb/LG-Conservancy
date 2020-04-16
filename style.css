@@ -1,0 +1,14 @@
+#logo-img {
+    background: url(logo.png) no-repeat;
+    width: 420px;
+    height: 143px;
+    margin: 10px 15px 10px 0;
+}
+header > .navbar .nav-link {
+    font-size: 5vw;
+    padding-right: 2vw;
+    color: green;
+    font-weight: bold;
+}
+
+
