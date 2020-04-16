@@ -1,14 +1,63 @@
-#logo-img {
-    background: url(logo.png) no-repeat;
-    width: 420px;
-    height: 143px;
-    margin: 10px 15px 10px 0;
-}
-header > .navbar .nav-link {
-    font-size: 5vw;
-    padding-right: 2vw;
-    color: green;
-    font-weight: bold;
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
 }
 
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 20vw;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    overflow: auto;
+    font-size: 4vw;
+}
 
+    .sidebar a {
+        display: block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+        float: right;
+    }
+
+        .sidebar a.active {
+            color: black;
+            font-weight: bold;
+        }
+
+        .sidebar a:hover:not(.active) {
+            color: black;
+        }
+
+div.content {
+    margin-right: 25vw;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+        .sidebar a {
+            float: right;
+        }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
